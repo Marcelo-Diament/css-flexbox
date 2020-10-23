@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="revisit-after" content="30 days">
+    <meta name="identifier-URL" content="https://djament.com.br/dh/blend-02/01-html-e-css/flexbox/flex-grow.html">
+    <meta name="abstract" content="DH | Flex Grow">
+    <meta name="author" content="Marcelo Diament, Djament Comunicação">
+    <meta name="robots" content="index,follow">
+    <meta name="contact" content="contato@djament.com.br">
+    <meta name="reply-to" content="contato@djament.com.br">
+    <meta name="copyright" content="Djament">
+    <meta name="rating" content="general">
+    <meta name="web_author" content="Djament Comunicação">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:site_name" content="CSS Flex Box | Flex Grow">
+    <meta property="og:locale" content="pt-BR">
+    <meta name="og:locality" content="São Paulo">
+    <meta name="og:region" content="SP">
+    <meta name="og:country-name" content="BR">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://br.digitalhouse.com/wp-content/themes/dh/assets/img/icons/apple-icon-60x60.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Flex Grow">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" sizes="60x60" href="https://br.digitalhouse.com/wp-content/themes/dh/assets/img/icons/apple-icon-60x60.png">
+    <link rel="icon" type="image/png" sizes="60x60" href="https://br.digitalhouse.com/wp-content/themes/dh/assets/img/icons/apple-icon-60x60.png">  
+    <link rel="canonical" href="https://djament.com.br/dh/blend-02/01-html-e-css/flexbox/flex-grow.html">
+	<title>Flex Grow</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-grow.css">
+</head>
+<body>
+	<header>
+		<h1>Documento com display flex e flex grow</h1>
+	</header>
+	<main>
+		<section class="container">
+			<h2>section { display : block; }</h2>
+			<h3>Sem display flex, o display padrão do article é block. <a href="https://www.impressivewebs.com/default-css-display-values-html-elements/" target="_blank" title="Veja quais o display padrão de (quase) todos as tags HTML">Saiba mais sobre o display padrão dos elementos HTML</a></h3>
+			<section id="front00">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02">Artigo 2</article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-grow: 0; }</h2>
+			<h3>Nenhums dos artigos se expande para preencher o espaço vazio</h3>
+			<section id="front01">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02">Artigo 2</article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-grow: 0; } | <span style="color: red;">.artigo02 { flex-grow: 1; }</span></h2>
+			<h3><u>Apenas o artigo 02 se expande</u> para preencher o espaço vazio</h3>
+			<section id="front02">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02"><abbr title="flex-grow: 1">Artigo 2</abbr></article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-grow: 1; }</h2>
+			<h3>Todos os artigos se expandem igualmente para preencher o espaço vazio</h3>
+			<section id="front03">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02">Artigo 2</article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-grow: 1; } | <span style="color: red;">.artigo02 { flex-grow: 3; }</span></h2>
+			<h3>Todos os artigos se expandem igualmente - <b>exceto o artigo 02</b> (que cresce preenchendo <u>3 vezes mais o espaço <b>restante</b></u> que os outros artigos, pois tem grow 3)</h3>
+			<section id="front04">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02"><abbr title="flex-grow: 3">Artigo 2</abbr></article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-grow: 1; } | <span style="color: red;">.artigo02 { flex-grow: 3; }<br>+ .container { width: 50%; }</span></h2>
+			<h3>Veja que o grow não surte efeito, pois não há espaço de sobra.</h3>
+			<section id="front05">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02"><abbr title="flex-grow: 3">Artigo 2</abbr></article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+	</main>
+	<!-- <script src="js/script.js"></script> -->
+</body>
+</html>

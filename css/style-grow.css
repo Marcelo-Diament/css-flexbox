@@ -1,0 +1,40 @@
+#front00{
+	display: block;
+}
+
+/*FLEX CONTAINERS*/
+#front01,
+#front02,
+#front03,
+#front04,
+#front05 {
+	display: flex;
+	width: 100%;
+	margin: 20px auto;
+}
+#front05 {
+	width: 50%;
+}
+
+/*FLEX ITEMS <PADRÃO> */
+#front01 .artigo,
+#front02 .artigo {
+	flex-grow: 0;
+}
+#front03 .artigo,
+#front04 .artigo,
+#front05 .artigo {
+	flex-grow: 1;
+}
+/*FLEX ITEMS <EXCEÇÃO> */
+#front04 .artigo02,
+#front05 .artigo02 {
+	flex-grow: 3;
+	filter: grayscale(85%);
+	color: #000;
+}
+#front02 .artigo02{
+	flex-grow: 1;
+	filter: grayscale(85%);
+	color: #000;
+}

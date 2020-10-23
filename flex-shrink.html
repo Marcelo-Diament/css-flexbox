@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="revisit-after" content="30 days">
+    <meta name="identifier-URL" content="https://djament.com.br/dh/blend-02/01-html-e-css/flexbox/flex-shrink.html">
+    <meta name="abstract" content="DH | Flex Shrink">
+    <meta name="author" content="Marcelo Diament, Djament Comunicação">
+    <meta name="robots" content="index,follow">
+    <meta name="contact" content="contato@djament.com.br">
+    <meta name="reply-to" content="contato@djament.com.br">
+    <meta name="copyright" content="Djament">
+    <meta name="rating" content="general">
+    <meta name="web_author" content="Djament Comunicação">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:site_name" content="CSS Flex Box | Flex Shrink">
+    <meta property="og:locale" content="pt-BR">
+    <meta name="og:locality" content="São Paulo">
+    <meta name="og:region" content="SP">
+    <meta name="og:country-name" content="BR">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://br.digitalhouse.com/wp-content/themes/dh/assets/img/icons/apple-icon-60x60.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Flex Shrink">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" sizes="60x60" href="https://br.digitalhouse.com/wp-content/themes/dh/assets/img/icons/apple-icon-60x60.png">
+    <link rel="icon" type="image/png" sizes="60x60" href="https://br.digitalhouse.com/wp-content/themes/dh/assets/img/icons/apple-icon-60x60.png">  
+    <link rel="canonical" href="https://djament.com.br/dh/blend-02/01-html-e-css/flexbox/flex-shrink.html">
+	<title>Flex Shrink</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-shrink.css">
+</head>
+<body>
+	<header>
+		<h1>Documento com display flex e flex shrink</h1>
+	</header>
+	<main>
+		<section class="container">
+			<h2>section { display : block; }</h2>
+			<h3>Sem display flex, o display padrão do article é block. <a href="https://www.impressivewebs.com/default-css-display-values-html-elements/" target="_blank" title="Veja quais o display padrão de (quase) todos as tags HTML">Saiba mais sobre o display padrão dos elementos HTML</a></h3>
+			<section id="front00">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02">Artigo 2</article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-shrink: 0; flex-basis: 200 px; }</h2>
+			<h3>Nenhums dos artigos se retrai para se adequar ao espaço disponível (<u>todos ficam com 200px - flex-basis</u>). Como não temos wrap, extrapola o container</h3>
+			<section id="front01">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02">Artigo 2</article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-shrink: 0; flex-basis: 200px; } | <span style="color: red;">.artigo02 { flex-shrink: 1; }</span></h2>
+			<h3><u>Apenas o artigo 02 se contrai</u>, o restante mantém os 200 px, extrapolando o container</h3>
+			<section id="front02">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02"><abbr title="flex-shrink: 1">Artigo 2</abbr></article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-shrink: 1; flex-basis: 200px; }</h2>
+			<h3>Todos os artigos se contraem igualmente para respeitar o espaço disponível no container</h3>
+			<section id="front03">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02">Artigo 2</article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-shrink: 1; flex-basis: 200px; } | <span style="color: red;">.artigo02 { flex-shrink: 3; }</span></h2>
+			<h3>Todos os artigos se contraem igualmente - <b>exceto o artigo 02</b> (que <u>diminui 3 vezes mais em relação ao quanto diminuem os artigos restantes</u>, pois tem shrink 3)</h3>
+			<section id="front04">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02"><abbr title="flex-shrink: 3">Artigo 2</abbr></article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+		<br>
+		<section class="container">
+			<h2>section { display : flex; } | article { flex-shrink: 1; flex-basis: 200px; } | <span style="color: red;">.artigo02 { flex-shrink: 0; }<br>+ .container { width: 50%; }</span></h2>
+			<h3>Veja que o shrink não surte efeito no artigo 02, então os outros "compensam a redução".</h3>
+			<section id="front05">
+				<article class="artigo artigo01">Artigo 1</article>
+				<article class="artigo artigo02"><abbr title="flex-shrink: 0">Artigo 2</abbr></article>
+				<article class="artigo artigo03">Artigo 3</article>
+				<article class="artigo artigo04">Artigo 4</article>
+				<article class="artigo artigo05">Artigo 5</article>
+				<article class="artigo artigo06">Artigo 6</article>
+				<article class="artigo artigo07">Artigo 7</article>
+				<article class="artigo artigo08">Artigo 8</article>
+				<article class="artigo artigo09">Artigo 9</article>
+				<article class="artigo artigo10">Artigo 10</article>
+				<article class="artigo artigo11">Artigo 11</article>
+				<article class="artigo artigo12">Artigo 12</article>
+			</section>
+		</section>
+	</main>
+	<!-- <script src="js/script.js"></script> -->
+</body>
+</html>

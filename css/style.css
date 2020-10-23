@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+section.container {
+	margin: 45px 30px;
+}
+iframe {
+	border: 10px solid lightgreen;
+	cursor: move;
+}
+iframe #estiloCode, iframe #estruturaCode {
+	border: 1px solid green;
+	padding: 5px; 
+}
+#front00, #front01, #front02, #front03 {
+	text-align: center;
+}
+.container {
+	margin: 30px auto;
+}
+/* COLOR SCHEME */
+.artigo {
+	font-weight: bolder;
+	line-height: 32px;
+	font-size: 20px;
+	color: #fff;
+}
+.artigo01 {
+	background-color: #ebc844;
+	/*color: #0d3c55;*/
+}
+.artigo02 {
+	background-color: #a2b86c;
+	/*color: #c02e1d;*/
+}
+.artigo03 {
+	background-color: #5ca793;
+	/*color: #d94e1f;*/
+}
+.artigo04 {
+	background-color: #1395ba;
+	/*color: #f16c20;*/
+}
+.artigo05 {
+	background-color: #117899;
+	/*color: #ef8b2c;*/
+}
+.artigo06 {
+	background-color: #0f5b78;
+	/*color: #ecaa38;*/
+}
+.artigo07 {
+	background-color: #0d3c55;
+	/*color: #ebc844;*/
+}
+.artigo08 {
+	background-color: #c02e1d;
+	/*color: #a2b86c;*/
+}
+.artigo09 {
+	background-color: #d94e1f;
+	/*color: #5ca793;*/
+}
+.artigo10 {
+	background-color: #f16c20;
+	/*color: #1395ba;*/
+}
+.artigo11 {
+	background-color: #ef8b2c;
+	/*color: #117899;*/
+}
+.artigo12 {
+	background-color: #ecaa38;
+	/*color: #0f5b78;*/
+}
+.over {
+	border: 1px dotted lightgreen;
+}
